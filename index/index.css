@@ -1,0 +1,141 @@
+/* General */
+
+body {
+  margin: 0;
+  color: white;
+  font-family: 'Lato';
+  font-weight: 500;
+  font-size: 80px;
+  min-height: 100vh;
+  background: #ffffff;
+  text-transform: uppercase;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+
+h1 {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 300%;
+  margin: 0 0 25px;
+}
+
+.video-container {
+  z-index: -1;
+  position: absolute;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+.btn1 {
+  font-size: 15px;
+  border: 10px solid white;
+  border-radius: 100px;
+  background-color: white;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  height: 25px;
+  line-height: 25px;
+}
+
+/* Navbar */
+
+#navbar {
+  position: fixed;
+  height: 13%;
+  width: 100%;
+  backdrop-filter: blur(0px);
+  z-index: 99;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.05s;
+}
+
+#nav2 {
+  position: fixed;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.05s;
+  border-bottom: 1px solid white;
+}
+
+/* Hamburger Menu */
+
+#menu-toggle {
+  opacity: 0;
+  position: fixed;
+}
+
+#menu-toggle:checked ~ .menu-box {
+left: 0 !important;
+}
+
+.menu-btn {
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 45%;
+  height: 100vh;
+  margin: 0;
+  list-style: none;
+  transition-duration: 1s;
+  backdrop-filter: blur(50px);
+  z-index: 10;
+}
+
+.menu-item {
+  display: block;
+  padding: none;
+  color: rgb(139, 139, 139);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  margin-block: 50px;
+}
+
+.menu-item:hover {
+  color: white;
+}
+
+.menu-box div {
+  margin-top: 200px;
+  text-align: end;
+  width: 280px;
+  padding: none;
+  margin-right: 200px;
+}
