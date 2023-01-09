@@ -1,0 +1,207 @@
+
+    body {
+        margin: 0;
+        color: white;
+        font-family: Lato;
+        font-weight: 500;
+    }
+
+    .banner {
+        height: 100vh;
+        background-color: #262626;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .title {
+        font-size: 10px;
+        line-height: 450px;
+    }
+
+    .about {
+        height: 70vh;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .team {
+        height: 200vh;
+        background-color: #262626;
+        margin: auto;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 60px;
+    }
+
+    .profiles {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        text-align: left;
+    }
+
+    .profile {
+        width: 400px;
+        height: 550px;
+        margin-inline: 10px;
+    }
+
+    .imgContainer {
+        margin-bottom: -20px;
+    }
+
+    .textContainer {
+        border-left: 1px solid white;
+        height: 100px;
+        padding: 20px;
+    }
+
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block: 50px;
+    }
+
+    .btn1 {
+        font-size: 15px;
+        border: 10px solid rgb(123, 58, 139);
+        border-radius: 100px;
+        background-color: rgb(123, 58, 139);
+        width: 250px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        height: 25px;
+        line-height: 25px;
+        text-transform: uppercase;
+      }
+
+    /* Navbar */
+
+    #navbar {
+        position: fixed;
+        height: 13%;
+        width: 100%;
+        backdrop-filter: blur(0px);
+        z-index: 99;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: 0.05s;
+    }
+    
+    #nav2 {
+        position: fixed;
+        height: 100%;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.05s;
+        border-bottom: 1px solid white;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .locationBTN {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        
+    }
+
+    label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Hamburger Menu */
+
+    #menu-toggle {
+    opacity: 0;
+    position: fixed;
+  }
+  
+  #menu-toggle:checked ~ .menu-box {
+  left: 0 !important;
+  }
+  
+  .menu-btn {
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .menu-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 45%;
+    height: 100vh;
+    margin: 0;
+    list-style: none;
+    transition-duration: 1s;
+    backdrop-filter: blur(50px);
+    z-index: 10;
+  }
+  
+  .menu-item {
+    display: block;
+    padding: none;
+    color: rgb(139, 139, 139);
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+    margin-block: 50px;
+  }
+  
+  .menu-item:hover {
+    color: white;
+  }
+  
+  .menu-box div {
+    margin-top: 200px;
+    text-align: end;
+    width: 280px;
+    padding: none;
+    margin-right: 200px;
+  }
